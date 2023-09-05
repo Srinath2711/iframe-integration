@@ -1,0 +1,49 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+svg:not(:root) {
+  overflow: visible;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(rgb(93, 60, 122) 2.99%, rgb(125, 63, 152) 97.99%);
+}
+
+.header {
+  position: fixed;
+  background: #282037;
+  border-bottom: #111 2px solid;
+  padding: 15px 15px 14px 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header button, .header select {
+  margin-right: 15px;
+  background: #9955c6;
+  border: #9955c6 1px solid;
+  border-radius: 4px;
+  color: #fff;
+  padding: 6px 10px;
+}
+
+.header button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.header button:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@explain-everything/app-frames",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/app-frames.umd.cjs",
+  "module": "./dist/app-frames.js",
+  "exports": {
+    ".": {
+      "import": "./dist/app-frames.js",
+      "require": "./dist/app-frames.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-draggable": "4.4.5",
+    "re-resizable": "6.9.9"
+  },
+  "devDependencies": {
+    "@types/node": "20.5.0",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "@vitejs/plugin-react": "4.0.3",
+    "typescript": "5.0.4",
+    "vite": "4.3.9"
+  }
+}
